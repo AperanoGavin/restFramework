@@ -1,0 +1,6 @@
+1. 
+python3 -m venv restframework
+source restframework/bin/activate
+
+2.
+python -m pip install django
