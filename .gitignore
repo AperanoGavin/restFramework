@@ -7,3 +7,11 @@ database/
 
 restframework/
 /restframework
+
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore SQLite database file
+db.sqlite3
