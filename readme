@@ -9,3 +9,5 @@ python -m pip install django
 
 
 dont forget to change the engine in the settings.py file
+
+3. implement jwt token for authentication
