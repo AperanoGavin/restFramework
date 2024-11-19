@@ -4,3 +4,8 @@ source restframework/bin/activate
 
 2.
 python -m pip install django
+@instal  psycopg2-binary-2.9.10 for postgresql connection
+@instal ( pip install python-decouple) for environement purposes
+
+
+dont forget to change the engine in the settings.py file

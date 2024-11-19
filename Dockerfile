@@ -6,10 +6,15 @@ WORKDIR /main
 
 # Copy the requirements file into the working directory
 COPY requirements.txt /main 
+#RUN pip install --upgrade pip
+#RUN pip install -r requirements.txt
+RUN apt-get update && apt-get install -y libpq-dev gcc
+RUN apt-get install libpq-dev -y
+RUN pip install psycopg
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
 COPY . /main
-RUN apt-get update
 
 #go inside app/ before run the server
 WORKDIR /main/app
