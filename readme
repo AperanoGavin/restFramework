@@ -11,3 +11,9 @@ python -m pip install django
 dont forget to change the engine in the settings.py file
 
 3. implement jwt token for authentication
+
+4 if you got an error like this:
+
+"django.db.migrations.exceptions.InconsistentMigrationHistory: Migration admin.0001_initial is applied before its dependency users.0001_initial on database 'default'."
+
+comment out the admin in the installed apps in the settings.py file
